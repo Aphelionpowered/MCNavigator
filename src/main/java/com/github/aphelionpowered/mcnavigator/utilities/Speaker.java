@@ -29,4 +29,19 @@ public class Speaker {
     SendError(sender, "You are not able to do this.");
   }  
 
+  public static void tooManyMatches(CommandSender sender){
+    SendError(sender, "Your search was not unique, multiple players match that query. Be more specific please.");
+  }
+
+  public static void noMatches(CommandSender sender){
+    SendError(sender, "No players matched that query.  Please check your spelling and try again.");
+  }
+
+  public static void tooManyArguments(CommandSender sender){
+    SendError(sender, "You can only point your compass at one person.  Please try again.");
+  }
+
+  public static void compassPointed(CommandSender sender, String location){
+    SendSuccess(sender, "Compass pointed at " + location + ".");
+  }
 }

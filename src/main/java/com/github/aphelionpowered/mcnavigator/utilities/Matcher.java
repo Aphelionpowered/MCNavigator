@@ -8,16 +8,22 @@ import org.bukkit.command.CommandSender;
 
 public class Matcher {
 
- public static Player matchWithPlayer(String reqPlayer){
+ public static Player matchWithPlayer(CommandSender sender, String reqPlayer){
 
    List<Player> matchedPlayers = Bukkit.getServer().matchPlayer(reqPlayer);
 
    if (matchedPlayers.size() > 1){
+     Speaker.tooManyMatches(sender);
+     return null;
+   }
 
+   if (matchedPlayers.isEmpty()){
+     Speaker.noMatches(sender);
+     return null;
    }
 
    if (matchedPlayers.size() == 1){
-
+     return matchedPlayers.get(0);
    }
 
    return null;
