@@ -26,7 +26,7 @@ public class Speaker {
   }  
   
   public static void noPermission(CommandSender sender){
-    SendError(sender, "You are not able to do this.  You require the permission 'mcnavigator.point'");
+    SendError(sender, "You are not able to do this.");
   }  
 
 }
