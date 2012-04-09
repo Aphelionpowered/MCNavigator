@@ -11,6 +11,11 @@ public class Point {
       Speaker.denyConsole(sender);
       return;
     } 
+
+    if (!sender.hasPermission("mcnavigator.point")){
+      Speaker.noPermission(sender);
+      return;
+    }
     
   }
   

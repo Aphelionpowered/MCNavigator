@@ -24,5 +24,9 @@ public class Speaker {
   public static void denyConsole(CommandSender sender){
     SendError(sender, "This command may not be run as console.");
   }  
+  
+  public static void noPermission(CommandSender sender){
+    SendError(sender, "You are not able to do this.  You require the permission 'mcnavigator.point'");
+  }  
 
 }
