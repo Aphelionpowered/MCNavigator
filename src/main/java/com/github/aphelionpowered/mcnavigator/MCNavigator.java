@@ -10,7 +10,8 @@ public class MCNavigator extends JavaPlugin {
   public void onEnable(){
     
     PluginDescriptionFile pdfFile = this.getDescription();
-    System.out.println(pdfFile.getName() + " has loaded.");
+    System.out.println(pdfFile.getName() + " by Mentioum has loaded.");
+    System.out.println(pdfFile.getName() + " Made for the Aphelion community - http://forum.aphelionpowered.com");
 
   }
   @Override

@@ -1,6 +1,7 @@
 name: MCNavigator
 main: com.github.aphelionpowered.mcnavigator.MCNavigator
-version: 0.1
+version: 1.0 
+author: Mentioum
 commands:
   point:
     description: Allows players to point their compasses.
