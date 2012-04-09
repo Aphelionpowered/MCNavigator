@@ -28,11 +28,11 @@ public class Point {
     if (args.length == 1){
       Player matchedPlayer = Matcher.matchWithPlayer(sender, args[0]);
       Player commandSender = (Player)sender;
-
-      Speaker.compassPointed(sender, args[0].toString()); 
       Location targetLocation = matchedPlayer.getLocation();
 
+      Speaker.compassPointed(sender, matchedPlayer.getName()); 
       commandSender.setCompassTarget(targetLocation);
+      Speaker.compassPointedAt(matchedPlayer, sender.getName());
       
       return;
     }

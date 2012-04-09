@@ -46,7 +46,7 @@ public class Speaker {
     SendSuccess(sender, "Compass pointed at " + location + ".");
   }
 
-  public static void compassPointedAt(CommandSender sender, Player matchedPlayer){
+  public static void compassPointedAt(Player matchedPlayer, String sender){
     SendSuccess(matchedPlayer, sender + "Pointed their compass at you.");
   }
 }
