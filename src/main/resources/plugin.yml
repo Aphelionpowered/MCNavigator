@@ -1,3 +1,10 @@
 name: MCNavigator
 main: com.github.aphelionpowered.mcnavigator.MCNavigator
 version: 0.1
+commands:
+  point:
+    description: Allows players to point their compasses.
+    usage: /point [player]
+    permission: mcnavigator.point
+    permission-message: You dont have the permission <mcnavigator.point>
+    default: true
