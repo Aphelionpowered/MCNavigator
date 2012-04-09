@@ -1,18 +1,19 @@
 package com.github.aphelionpowered.mcnavigator;
 
 import org.bukkit.plugin.java.JavaPlugin;
-import java.util.logging.Logger;
+import org.bukkit.plugin.PluginDescriptionFile;
 public class MCNavigator extends JavaPlugin {
 
-  Logger log;
-
+  @Override
   public void onEnable(){
-    log = this.getLogger();
-    log.info("MCNavigator Enabled");
+    
+    PluginDescriptionFile pdfFile = this.getDescription();
+    System.out.println(pdfFile.getName() + " has loaded.");
   }
+  @Override
   public void onDisable(){
-    log = this.getLogger();
-    log.info("MCNavigator Disabled");
+    PluginDescriptionFile pdfFile = this.getDescription();
+    System.out.println(pdfFile.getName() + " has shutdown.");
   }
   
 }
