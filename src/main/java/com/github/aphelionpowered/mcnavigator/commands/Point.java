@@ -25,6 +25,11 @@ public class Point {
       return;
     }
 
+    if (args.length < 1){
+      Speaker.noMatches(sender); 
+      return;
+    }
+
     if (args.length == 1){
       Player matchedPlayer = Matcher.matchWithPlayer(sender, args[0]);
       Player commandSender = (Player)sender;
