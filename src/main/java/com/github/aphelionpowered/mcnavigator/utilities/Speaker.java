@@ -22,7 +22,7 @@ public class Speaker {
   }
 
   public static void denyConsole(CommandSender sender){
-    
+    SendError(sender, "This command may not be run as console.");
   }  
 
 }
