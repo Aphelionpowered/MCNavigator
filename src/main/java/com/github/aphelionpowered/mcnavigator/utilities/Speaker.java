@@ -2,6 +2,7 @@ package com.github.aphelionpowered.mcnavigator.utilities;
 import java.util.logging.Logger;
 import org.bukkit.command.CommandSender;
 import org.bukkit.ChatColor;
+import org.bukkit.entity.Player;
 
 public class Speaker {
   
@@ -43,5 +44,9 @@ public class Speaker {
 
   public static void compassPointed(CommandSender sender, String location){
     SendSuccess(sender, "Compass pointed at " + location + ".");
+  }
+
+  public static void compassPointedAt(CommandSender sender, Player matchedPlayer){
+    SendSuccess(matchedPlayer, sender + "Pointed their compass at you.");
   }
 }
