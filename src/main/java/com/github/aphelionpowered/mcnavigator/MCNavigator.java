@@ -11,7 +11,7 @@ public class MCNavigator extends JavaPlugin {
     
     PluginDescriptionFile pdfFile = this.getDescription();
     System.out.println(pdfFile.getName() + " by Mentioum has loaded.");
-    System.out.println(pdfFile.getName() + " Made for the Aphelion community - http://forum.aphelionpowered.com");
+    System.out.println(pdfFile.getName() + " was made for the Aphelion community - http://forum.aphelionpowered.com");
 
   }
   @Override
