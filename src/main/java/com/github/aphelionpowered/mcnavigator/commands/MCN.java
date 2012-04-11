@@ -11,7 +11,10 @@ public class MCN {
       Speaker.noPermission(sender);
       return;
     }
-
+    if ("hide".equals(args[0])){
+      
+      
+    }
 
   }
 
