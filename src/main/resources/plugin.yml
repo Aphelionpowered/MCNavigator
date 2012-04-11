@@ -9,3 +9,10 @@ commands:
     permission: mcnavigator.point
     permission-message: You dont have the permission <mcnavigator.point>
     default: false
+
+  mcn:
+    description: Allows a player to change their personal settings.
+    usage: /mcn [setting] [option]
+    permission: mcnavigator.mcn
+    permission-message: You dont have the permission <mcnavigator.mcn>
+    default: false

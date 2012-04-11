@@ -24,6 +24,8 @@ public class MCNavigator extends JavaPlugin {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
     
         if(label.equalsIgnoreCase("point")) Point.Execute(sender,args);
+        if(label.equalsIgnoreCase("mcn")) Point.Execute(sender,args);
+        
         return true;
     };
   
