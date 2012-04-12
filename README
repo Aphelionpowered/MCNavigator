@@ -1,2 +1,7 @@
-THIS IS DERP FOR NOW
+##Development Rules##
 
+If you would like to work on this with me you are very welcome.  However please create a branch with your own username and the push back to that branch.  
+
+Then when you have finished your feature or unit of coding make a pull request to the master branch.  I will then deal with diff conflicts and keep the project tidy.  If you are not sure on how to do this then please let me know.
+
+//PS.  remember to fetch from upstream to your branch regularly to help avoid conflicts!//
