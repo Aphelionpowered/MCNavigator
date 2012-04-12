@@ -49,4 +49,13 @@ public class Speaker {
   public static void compassPointedAt(Player matchedPlayer, String sender){
     SendSuccess(matchedPlayer, sender + " pointed their compass at you.");
   }
+
+  public static void hideSuccess(CommandSender sender, String status){
+    SendSuccess(sender, "You have set your compass status to:   " + ChatColor.GREEN + "[" + status + "]");
+  }
+
+  public static void hideFail(CommandSender sender, String status){
+    SendError(sender, "Your compass status is already set to:   " + ChatColor.RED + "[" + status + "]");
+  }
+
 }
